@@ -1,0 +1,13 @@
+===========
+Just import
+===========
+
+import { MainWindow } from "";
+
+---
+
+(source_file
+    (import_statement
+        (imports_list
+            (identifier))
+        path: (string)))
