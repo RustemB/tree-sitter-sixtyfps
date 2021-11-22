@@ -69,6 +69,10 @@
     "named": false
   },
   {
+    "type": "comment",
+    "named": true
+  },
+  {
     "type": "from",
     "named": false
   },

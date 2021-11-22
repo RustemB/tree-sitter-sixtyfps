@@ -2,12 +2,17 @@
 Just import
 ===========
 
+// start import
 import { MainWindow } from "";
+
+// end import
 
 ---
 
 (source_file
+    (comment)
     (import_statement
         (imports_list
             (identifier))
-        path: (string)))
+        path: (string))
+    (comment))

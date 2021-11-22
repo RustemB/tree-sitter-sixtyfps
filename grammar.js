@@ -1,6 +1,11 @@
 module.exports = grammar({
   name: "sixtyfps",
 
+  extras: ($) => [
+    /\s|\\\r?\n/,
+    $.comment,
+  ],
+
   rules: {
     source_file: ($) => repeat($._statement),
 
@@ -38,5 +43,7 @@ module.exports = grammar({
         '"',
         '"',
       ),
+
+    comment: ($) => token(seq("//", /.*/)),
   },
 });
